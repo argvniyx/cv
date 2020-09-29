@@ -1,0 +1,3 @@
+* CV
+
+Quite simply, my CV. HTML + CSS. Version-controlled in anticipation for further shenanigans.
