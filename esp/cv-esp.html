@@ -1,132 +1,215 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Resume</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header>
-            <h2>Andrés Ricardo Garza Vela</h2>
-            <div class="contact-info">
-                <a href='mailto:aricav96@gmail.com'>aricav96@gmail.com</a>
-                <span>(+52 1) 81 17 42 13 96</span>
-                <a href="https://www.github.com/argvniyx">https://www.github.com/argvniyx</a>
-            </div>
-        </header>
+  <head>
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
 
-        <div class="education-work">
-            <section id='edu'>
-                <h3>Educación</h3>
-                <b>Instituto Tecnológico y de Estudios Superiores de Monterrey</b>
-                Ingeniería en Tecnologías Computacionales (Clase de Diciembre 2021)
-                <span><b>Promedio:</b> 97/100</span>
-                <b>Intereses</b>
-                <i>
-                    Administración de Sistemas, Desarrollo Web, Compiladores y Herramientas de Desarrollo,
-                    Inteligencia Artificial, Interacción Humano-Computadora, Dev-Ops.
-                </i>
-            </section>
+    <header>
+      <h2>Andrés Ricardo Garza Vela</h2>
+	  <div class="contact-info">
+		<a href='mailto:aricav96@gmail.com'>aricav96@gmail.com</a>
+		<p>(+52 1) 8117421396</p>
+		<a href="https://www.github.com/argvniyx">https://www.github.com/argvniyx</a>
+	  </div>
+    </header>
 
-            <section id='work'>
-                <h3>Experiencia Laboral</h3>
-                <b>Practicante de Administración de Sistemas (Diciembre 2017 - Junio 2018)</b>
-                <i>Monterrey, México</i>
-                <ul>
-                    <li>Trabajé en la división de investigación configurando Passbolt en un stack LEMP para el equipo de desarrollo</li>
-                    <li>
-                        Instalé un servidor de correo Postfix y un servidor DNS BIND, y luego migré estos servicios de máquinas
-                        virtuales a contenedores de Docker.
-                    </li>
-                    <li>
-                        Escribí programas de bash para automatizar algunas tareas relacionadas a esto (e.g. el manejo de usuarios virtuales
-                        para el servidor de dovecot de IMAP, instalar Nginx y Docker, entre otras cosas).
-                    </li>
-                </ul>
-            </section>
-        </div>
+	<hr>
 
-        <section>
-            <h3>Proyectos</h3>
-            <span><b>LOSP (2018)</b> / <a href="https://github.com/argvniyx/losp">https://github.com/argvniyx/losp</a></span>
-            <p>
-                Hice un simulador de un programador por prioridades y un paginador LRU en Racket para un curso de Sistemas Operativos.
-                En particular, utilicé análisis recursivo descendente para cargar programas según el mensaje enviado por un servidor.
-            </p>
-            <span><b>El Lenguaje de Programación Axolotl (2019)</b> / (repositorio privado)</span>
-            <p>
-                Dialecto de Lisp fuertemente tipado escrito en Haskell. Colaboré en decisiones de diseño; por
-                ejemplo, la sintaxis de la forma <code>let</code> y documentación para el curso de compiladores
-                de un amigo.
-            </p>
-            <span><b>Telos</b> / <a href="https://github.com/argvniyx/telos">https://github.com/argvniyx/telos</a></span>
-            <p>
-                Un temporizador semanal y registro basado sobre la técnica Pomodoro, como proyecto final del
-                curso de Desarrollo de Aplicaciones Web. Utiliza jQuery para el front, Node (express, mongoose
-                y morgan) para el back. Se puede probar en
-                <a href="https://quiet-atoll-67051.herokuapp.com/" target=_blank>https://quiet-atoll-67051.herokuapp.com/</a>
-            </p>
-            <span><b>Polyhedron (2019)</b> / <a href="https://argvniyx.github.io">https://argvniyx.github.io</a></span>
-            <p>
-                Polyhedron es mi página de Github hecha con Jekyll que funge como mi blog para discutir libros de ciencia computacional, análisis de literatura,
-                ciencia, filosofía y prácticamente cualquier cosa que me interese. Actualmente estoy leyendo <i>Structure and Interpretation of Computer Programs</i>.
-            </p>
-            <span><b>Dotfiles</b> / <a href="https://github.com/argvniyx/dotfiles">https://github.com/argvniyx/dotfiles</a></span>
-            <p>
-                Tengo un repositorio con mis configuraciones de Linux. Algunas de las más interesantes son las
-                de StumpWM y los scripts de bash en <code>bin</code>; los cuáles hacen cosas como respaldar mi
-                información, correr programas especiales como polybar o permitirme elegir mi sesión de X.
-            </p>
-        </section>
+	<div class="bodyer">
 
-        <section>
-            <h3>Habilidades</h3>
-            <div class="education-work">
-                <section>
-                    <b>Lenguajes de Programación</b>
-                    <hr>
-                    <table style="width: 100%">
-                        <tr>
-                            <td><b>C++</b> <i class="meter">▪▪▪▪▫</i></td>
-                            <td><b>Lisp (CL/Scheme)</b> <i class="meter">▪▪▪▪▫</i></td>
-                            <td><b>Javascript</b> <i class="meter">▪▪▪▫▫</i></td>
-                        </tr>
-                        <tr>
-                            <td><b>C</b> <i class="meter">▪▪▪▫▫</i></td>
-                            <td><b>Haskell</b> <i class="meter">▪▪▫▫▫</i></td>
-                            <td><b>Erlang</b> <i class="meter">▪▫▫▫▫</i></td>
-                        </tr>
-                        <tr>
-                            <td><b>Python</b> <i class="meter">▪▫▫▫▫</i></td>
-                            <td><b>Kotlin</b> <i class="meter">▪▫▫▫▫</i></td>
-                        </tr>
-                    </table>
-                </section>
+	  <section>
+		<h3> <span> Educación </span> </h3>
+		<ul>
+		  <li>
+			<p>	<b>Ingeniería en Tecnologías Computuacionales</b> </p>
+			<p> (Clase de diciembre, 2021) </p>
+		    <p> <i> Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)</i> </p>
+		  </li>
+		  <li> <p> <b> Promedio: </b> 97/100 </p> </li>
+		  <li>
+			<p> <b>Intereses Profesionales</b> </p>
+			<i> Lenguajes de Programación, Compiladores, Dev Tools, SO, AI, HCI, Web, Dev-Ops, Administration de sistemas</i>
+		  </li>
+		  <li>
+			<p> <b>Intereses Personales</b> </p>
+			<i> Literatura, Música, Videojuegos, Enseñanza/Meta-aprendizaje </i>
+		  </li>
+		</ul>
+      </section>
 
-                <section>
-                    <b>Plataformas, Frameworks y otras herramientas</b>
-                    <hr>
-                    <table style="width: 100%">
-                        <tr>
-                            <td><b>Linux (Debian)</b> <i class="meter">▪▪▪▪▫</i></td>
-                            <td><b>React.js</b> <i class="meter">▪▪▫▫▫</i></td>
-                            <td><b>Jekyll</b> <i class="meter">▪▪▫▫▫</i></td>
-                        </tr>
-                        <tr>
-                            <td><b>Git</b> <i class="meter">▪▪▪▫▫</i></td>
-                            <td><b>MongoDB</b> <i class="meter">▪▪▫▫▫</i></td>
-                            <td><b>Node.js</b> <i class="meter">▪▪▫▫▫</i></td>
-                        </tr>
-                        <tr>
-                            <td><b>MySQL</b> <i class="meter">▪▫▫▫▫</i></td>
-                            <td><b>Nginx</b> <i class="meter">▪▫▫▫▫</i></td>
-                            <td><b>Android</b> <i class="meter">▪▫▫▫▫</i></td>
-                        </tr>
-                    </table>
-                </section>
-            </div>
-        </section>
-    </body>
+      <section>
+        <h3> <span>Experiencia Laboral</span> </h3>
+        <p> <b>Practicante sysadmin (NIC México)</b> </p>
+		<p> <i> (diciembre 2017 - junio 2018) </i> </p>
+
+		<ul>
+          <li>
+			Configuración de un <span class="highlight">stack LEMP</span> con <span class="highlight">Passbolt</span>
+            para el equipo de investigación
+		  </li>
+
+          <li>
+			Configuración de servidores <span class="highlight">Postfix</span> y <span class="highlight">BIND</span> 
+		  </li>
+
+          <li>
+            Automatización con <span class="highlight">bash</span> del manejo de usuarios virtuales en
+            <span class="highlight">Dovecot IMAP</span>, de instalaciones de
+            <span class="highlight">Nginx</span> y <span class="highlight">Docker</span>
+		  </li>
+        </ul>
+
+		<p> <b> Tutor WIT (Women in Tech) </b> </p>
+		<p> <i> (agosto 2018 - diciembre 2018 / agosto 2020 - diciembre 2020) </i> </p>
+
+		<ul>
+          <li>
+            Enseñanza de <span class="highlight">HTML, CSS, Javascript y Scratch</span>
+		  </li>
+        </ul>
+      </section>
+
+      <section>
+		<h3> <span> Proyectos </span> </h3>
+
+		<ul>
+		  <li>
+			<h4>
+			  <b>LOSP (2018)</b> /
+			  <a href="https://github.com/argvniyx/losp" target="_blank">
+				https://github.com/argvniyx/losp
+			  </a>
+			</h4>
+
+			<p>
+              Un planificador basado sobre prioridad y con paginación LRU escrito en
+			  <span class="highlight">Racket</span> para el curso de sistemas operativos.
+			</p>
+		  </li>
+
+		  <li>
+			<h4>
+			  <b>Telos (2019)</b> /
+			  <a href="https://github.com/argvniyx/telos" target="_blank">
+				https://github.com/argvniyx/telos
+			  </a>
+			</h4>
+			<p>
+              Bitácora y temporizador semanales que implementan la técnica pomodoro. Utiliza
+              <span class="highlight">jQuery</span> en front-end y
+			  <span class="highlight">Node.js (express, mongoose, morgan)</span> para back-end.
+		    </p>
+		  </li>
+
+		  <li>
+			<h4>
+			  <b>ReferenciApp (2019)</b> /
+			  <a href="https://github.com/genaro56/ReferenciApp" target="_blank">
+				https://github.com/genaro56/ReferenciApp
+			  </a>
+			</h4>
+
+			<p>
+              Aplicación <span class="highlight">Android en Kotlin</span> que tiene juegos
+              para enseñar a citar en APA.
+			</p>
+		  </li>
+
+		  <li>
+			<h4>
+			  <b>Prosopon (2020)</b> / <a href="https://argvniyx.github.io" target="_blank">
+				https://argvniyx.github.io
+			  </a>
+			</h4>
+
+			<p>
+              Mi página personal, hecha en <span class="highlight">Harp.js</span> (WIP).
+			</p>
+		  </li>
+
+		  <li>
+			<h4>
+			  <b>Dotfiles</b> /
+			  <a href="https://github.com/argvniyx/dotfiles" target="_blank">
+				https://github.com/argvniyx/dotfiles
+			  </a>
+			</h4>
+
+			<p>
+              Mis archivos de configuración, scripts y documentación de <span class="highlight">Linux and Unix</span>
+			</p>
+		  </li>
+		</ul>
+      </section>
+
+      <section>
+		<h3> <span> Habilidades </span> </h3>
+
+        <table>
+		  <caption> <b>Lenguajes de Programación</b> </caption>
+
+		  <tr>
+            <td><b>Lisp**</b> <i class="meter">▪▪▪▪▫</i></td>
+            <td><b>C++</b> <i class="meter">▪▪▪▫▫</i></td>
+            <td><b>Javascript</b> <i class="meter">▪▪▪▫▫</i></td>
+          </tr>
+
+          <tr>
+            <td><b>C</b> <i class="meter">▪▪▪▫▫</i></td>
+            <td><b>Haskell</b> <i class="meter">▪▪▫▫▫</i></td>
+            <td><b>Erlang</b> <i class="meter">▪▫▫▫▫</i></td>
+          </tr>
+
+          <tr>
+            <td><b>Python</b> <i class="meter">▪▪▫▫▫</i></td>
+            <td><b>Kotlin</b> <i class="meter">▪▫▫▫▫</i></td>
+          </tr>
+		  <tfooter><tr><td colspan="3"><i>** Common Lisp, Scheme, Clojure, Racket</i></td></tr></tfooter>
+        </table>
+
+        <table>
+		  <caption> <b>Plataformas, Frameworks</b> </caption>
+
+		  <tr>
+            <td><b>Linux (Debian)</b> <i class="meter">▪▪▪▪▫</i></td>
+            <td><b>React.js</b> <i class="meter">▪▪▪▫▫</i></td>
+			<td><b>Node.js</b> <i class="meter">▪▪▫▫▫</i></td>
+
+		  </tr>
+
+		  <tr>
+			<td><b>Git</b> <i class="meter">▪▪▪▫▫</i></td>
+			<td><b>Harp</b> <i class="meter">▪▫▫▫▫</i></td>
+            <td><b>Android</b> <i class="meter">▪▫▫▫▫</i></td>
+		  </tr>
+
+		  <tr>
+            <td><b>MySQL</b> <i class="meter">▪▪▫▫▫</i></td>
+            <td><b>MongoDB</b> <i class="meter">▪▪▫▫▫</i></td>
+			<td><b>Docker</b> <i class="meter">▪▫▫▫▫</i></td>
+		  </tr>
+        </table>
+
+		<table>
+		  <caption> <b>Lenguajes de Marcado</b> </caption>
+
+		  <tr>
+            <td><b>HTML</b></td>
+            <td><b>Markdown</b></td>
+            <td><b>Jade</b></td>
+		  </tr>
+
+		  <tr>
+            <td><b>CSS</b></td>
+            <td><b>Org</b></td>
+            <td><b>LaTeX</b></td>
+		  </tr>
+        </table>
+      </section>
+  </body>
 </html>
 <!-- ▪▪▪▫▫ -->
